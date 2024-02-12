@@ -92,6 +92,46 @@ void decimal_to_binary(int n){
 
 }
 
+void reverse_number(int m){
+    if (m>0)
+    {
+        printf("%d",m%10);
+        reverse_number(m/10);
+    }
+    
+}
+
+// 3,5 10, write a function make changes using least number of coins
+
+int can_change(int n){
+    int a;
+    if (n<3)
+    {
+        return -1;  
+
+    }
+    if (n==3 ||n==5 ||n==10)
+    {
+        return 1;
+    }
+    a=can_change(n-10); if (a>0){return a+1;}
+    a=can_change(n-5); if (a>0){return a+1;}
+    a=can_change(n-3); if (a>0){return a+1;}
+
+
+return a;
+    
+}
+int sum_squares(int m,int n){
+    // m<n
+    int result;
+    if (m!=n){
+        
+        result=sum_squares(m+1,n)+(m*m);
+        return result;
+    }
+    return n*n;
+}
 // int gcd(int a, int b){ find greatest common divisor
 //     int n=b;
 //     if
@@ -101,7 +141,7 @@ int main(int argc, char const *argv[])
 {
     // int n;
     // scanf("%d",&n);
-    printf("%d",m_to_power_n(5,3));
+    printf("%d",can_change(15));
     return 0;
 }
 
