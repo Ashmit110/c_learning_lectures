@@ -92,6 +92,15 @@ void decimal_to_binary(int n){
 
 }
 
+void reverse_number(int m){
+    if (m>0)
+    {
+        printf("%d",m%10);
+        reverse_number(m/10);
+    }
+    
+}
+
 // int gcd(int a, int b){ find greatest common divisor
 //     int n=b;
 //     if
@@ -101,7 +110,7 @@ int main(int argc, char const *argv[])
 {
     // int n;
     // scanf("%d",&n);
-    printf("%d",m_to_power_n(5,3));
+    reverse_number(123456);
     return 0;
 }
 
