@@ -49,6 +49,11 @@ int test(){
     return 0;
 }
 
+int test2(){
+    printf("hello");
+    return 0;
+}
+
 int count_zero(int n){
     if (n<10)
     {
