@@ -44,6 +44,10 @@ int count_digit(int n){
 
 
 }
+int test(){
+    printf("hello");
+    return 0;
+}
 
 int count_zero(int n){
     if (n<10)
