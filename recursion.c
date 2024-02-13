@@ -137,11 +137,23 @@ int sum_squares(int m,int n){
 //     if
 // }
 
+int largest_digit(int n){
+    // prints the largest digit in number
+    if (n/10>0){
+        return (largest_digit(n/10)>n%10)? largest_digit(n/10):n%10;
+    }
+    else
+    {
+        return n%10;
+    }
+    
+}
+
 int main(int argc, char const *argv[])
 {
     // int n;
     // scanf("%d",&n);
-    printf("%d",can_change(15));
+    printf("%d",largest_digit(6821));
     return 0;
 }
 
