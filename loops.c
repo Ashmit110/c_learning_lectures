@@ -27,6 +27,43 @@ void palindrome(){
     
 }
 
+int sum_ofEven_loops(int m,int n){
+    int sum=0;
+    while (m<=n)
+    {
+        if (m%2==0)
+        {
+            sum+=m;
+        }
+        m+=1;
+        
+    }
+    return sum;
+}
+
+int sum_ofEven_recur(int m,int n){
+    m=(m%2==0)?m:m+1;
+    if (m<=n && m%2==0)
+    {return sum_ofEven_recur(m+2,n)+m;}
+    else{return 0;}   
+}
+
+int identify_prime(int number){
+
+}
+
+int n_fac_100(){
+    int n_fac=1;
+    int n=0;
+    while (n_fac<=100)
+    {
+        n+=1;
+        n_fac=n_fac*n;
+    }
+    return n;
+    
+
+}
  int main(int argc, char const *argv[])
  {
     // int input;
@@ -41,6 +78,6 @@ void palindrome(){
     // printf("you entered %d integers",count);
     // return 0;
     // printf("%d",palindrome(12345));
-    palindrome();
+    printf("%d",n_fac_100());
     return 0;
  }
