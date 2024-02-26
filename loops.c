@@ -55,6 +55,7 @@ int identify_prime(int number){
 int n_fac_100(){
     int n_fac=1;
     int n=0;
+    
     while (n_fac<=100)
     {
         n+=1;
@@ -63,6 +64,33 @@ int n_fac_100(){
     return n;
     
 
+}
+
+// add integer until a zero is typed ignore if input if negative
+int func1(){
+    int input=0;
+    int sum=0;
+
+    while (1)
+    {
+        printf("enter a number");
+        scanf("%d",&input);
+        if (input>0){
+            sum+=input;
+        }
+        else if (input<0)
+        {
+            continue;
+        }
+        else
+        {
+            break;
+        }
+        
+        
+    }
+    return sum;
+    
 }
  int main(int argc, char const *argv[])
  {
@@ -78,6 +106,6 @@ int n_fac_100(){
     // printf("you entered %d integers",count);
     // return 0;
     // printf("%d",palindrome(12345));
-    printf("%d",n_fac_100());
+    printf("%d",func1());
     return 0;
  }
