@@ -1,8 +1,8 @@
-#include <stdio.h>
+int arr[5]={1,3,5,7,9};
+    // int i;
 
-int main(int argc, char const *argv[]){
-    
-    double radius=10;
-    printf("%lf %lf",radius,3.14*(radius++)*(radius++));
-    return 0;
-}
+    // int arr1[3]=arr;
+
+    // for(i=0;i<5;i++){
+    //     printf("%d",arr1[i]);
+    // }
