@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.11.4",
+    "heartbeatAt": "2024-06-02T04:19:00.346340",
+    "startedAt": "2024-06-02T04:18:59.367590",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\c learning\\lectures\\wan_test.py",
+    "codePathLocal": "wan_test.py",
+    "codePath": "wan_test.py",
+    "git": {
+        "remote": "https://github.com/Ashmit110/c_learning_lectures.git",
+        "commit": "b94b1aad3d849340f5680c02c83347c9209c369b"
+    },
+    "email": "89088826+Ashmit110@users.noreply.github.com",
+    "root": "C:/c learning/lectures",
+    "host": "DESKTOP-1UL35PJ",
+    "username": "Ashmit Rana",
+    "executable": "C:\\Users\\Ashmit Rana\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2500.0,
+        "min": 0.0,
+        "max": 2500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2500.0,
+            "min": 0.0,
+            "max": 2500.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 453.81151962280273,
+            "used": 422.0976676940918
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.692127227783203
+    }
+}
